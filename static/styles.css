@@ -1,0 +1,107 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+#chat-window {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #e9e9e9;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#conversation {
+  list-style: none;
+  padding: 0;
+}
+
+#conversation li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  width: fit-content;
+}
+
+#conversation li.user-message {
+  background-color: #b3d4fc;
+  align-self: flex-end;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center; /* Добавлено для центрирования кнопки */
+}
+
+#userInput {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+#conversation li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#conversation li.user-message {
+  justify-content: flex-end;
+}
+
+#conversation li.user-message .message-icon {
+  margin-left: 10px;
+}
+
+#conversation li.gpt-message .message-icon {
+  margin-right: 10px;
+}
+
+.message-icon {
+  display: flex;
+  align-items: center;
+}
+
+.message-content {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+}
+
+.user-message .message-content {
+  background-color: #b3d4fc;
+}
